@@ -2,20 +2,20 @@
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
-Version:          1.0_2
+Version:          1.0_3
 Release:          1
 Summary:          Relative Contribution of Effects in a Regression Model
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/Archive/%{packname}/%{packname}_1.0-2.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.0-3.tar.gz
 BuildArch:        noarch
 Requires:         R-core
 Requires:         R-tcltk 
-Requires:         R-nnet 
+Requires:         R-nnet R-MASS 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 BuildRequires:    R-tcltk 
-BuildRequires:    R-nnet 
+BuildRequires:    R-nnet R-MASS 
 %rename R-cran-relimp
 
 %description
