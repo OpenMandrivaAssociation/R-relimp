@@ -11,11 +11,9 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.0-3.tar.gz
 BuildArch:        noarch
 Requires:         R-core
-Requires:         R-tcltk 
-Requires:         R-nnet R-MASS 
+Requires:         R-tcltk R-nnet R-MASS
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
-BuildRequires:    R-tcltk 
-BuildRequires:    R-nnet R-MASS 
+BuildRequires:    R-tcltk R-nnet R-MASS
 %rename R-cran-relimp
 
 %description
