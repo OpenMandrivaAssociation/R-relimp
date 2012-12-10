@@ -11,9 +11,16 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.0-3.tar.gz
 BuildArch:        noarch
 Requires:         R-core
-Requires:         R-tcltk R-nnet R-MASS
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
-BuildRequires:    R-tcltk R-nnet R-MASS
+Requires:         R-tcltk 
+Requires:         R-nnet
+Requires:         R-MASS 
+BuildRequires:    R-devel
+BuildRequires:    Rmath-devel
+BuildRequires:    texlive-collection-latex 
+BuildRequires:    R-tcltk 
+BuildRequires:    R-nnet
+BuildRequires:    R-MASS 
+BuildRequires:    pkgconfig(lapack)
 %rename R-cran-relimp
 
 %description
@@ -43,3 +50,19 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/help
+
+
+%changelog
+* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0_3-1
++ Revision: 775049
+- Update to latest version
+
+* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0_2-1
++ Revision: 774875
+- Update and rebuild with R2spec
+- Update and rebuild with R2spec
+
+* Tue Dec 29 2009 Jérôme Brenier <incubusss@mandriva.org> 1.0.1-1mdv2010.1
++ Revision: 483325
+- import R-cran-relimp
+
