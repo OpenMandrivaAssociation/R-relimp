@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.0_3
-Release:          1
+Release:          2
 Summary:          Relative Contribution of Effects in a Regression Model
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
